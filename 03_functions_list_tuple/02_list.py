@@ -1,6 +1,7 @@
 fruits = ["apple", "banana", "cherry"]
 print(fruits)  # ['apple', 'banana', 'cherry']
 
+
 # Accessing Items
 # You access the list items by referring to the index number:
 # Note: The first item has index 0.
@@ -53,3 +54,26 @@ else:
 # List Length
 # To determine how many items a list has, use the len() function:
 print(len(fruits))  # 3
+
+# Add Items
+# To add an item to the end of the list, use the append() method:
+fruits.append("orange")
+print(fruits)  # ['apple', 'blackcurrant', 'cherry', 'orange']
+
+# To add an item at the specified index, use the insert() method:
+fruits.insert(1, "mango")
+print(fruits)  # ['apple', 'mango', 'blackcurrant', 'cherry', 'orange']
+
+# Remove Item
+# There are several methods to remove items from a list:
+# The remove() method removes the specified item:
+fruits.remove("mango")
+print(fruits)  # ['apple', 'blackcurrant', 'cherry', 'orange']
+
+# The pop() method removes the specified index, (or the last item if index is not specified):
+fruits.pop()
+print(fruits)  # ['apple', 'blackcurrant', 'cherry']
+
+# The del keyword removes the specified index:
+del fruits[0]
+print(fruits)  # ['blackcurrant', 'cherry']

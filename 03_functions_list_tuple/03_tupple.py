@@ -96,3 +96,18 @@ print(thistuple)  # ('apple', 'banana', 'cherry')
 # Example
 # Return the number of times the value 5 appears in the tuple:
 thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+
+
+#adding a new item to the tuple
+thistuple = thistuple + (9,)
+print(thistuple)  # (1, 3, 7, 8, 7, 5, 4, 6, 8, 5, 9)
+
+#deleting a tuple
+del thistuple
+# print(thistuple)  # NameError: name 'thistuple' is not defined
+
+#count() method
+#Return the number of times the value 5 appears in the tuple:
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+x = thistuple.count(5)
+print(x)  # 2
