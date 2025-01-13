@@ -3,7 +3,7 @@ How to create Virtual Environment
 
 To create and manage virtual environments:
 
-1. **Install virtualenv**
+1. **Install virtualenv (optional) **
     ```bash
     pip install virtualenv
     ```
