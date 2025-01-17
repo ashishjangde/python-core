@@ -4,8 +4,12 @@ class mamals :
         self.age = age
 
     def __str__(self) :
-        print( f"Name: {self.name}\nAge: {self.age}")
+        return f"Name: {self.name}\nAge: {self.age}"
+    
+    def __len__(self) :
+        return len(self.name)
 
 m1 = mamals("Ashish", 25)
 
-m1.__str__()
+print(str(m1)) # Name: Ashish
+print(len(m1)) # 6
